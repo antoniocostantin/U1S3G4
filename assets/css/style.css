@@ -5,9 +5,11 @@
 
 h1 {
     margin-bottom: 2em;
+    margin-top: 1.5em;
+    color: darkred;
 }
 
-.tombCell {
+.tombCell ,.cellCartel{
     display: inline-block;
     padding: 1em;
     border: solid 0.5px;
@@ -18,6 +20,19 @@ h1 {
     margin-bottom: 1em;
 }
 
+.cellCartel{
+    width: 3%;
+    margin-bottom: 1em;
+}
+
 .selected{
-    color: red;
+    color: lightslategray;
+    background-color: darkred;
+}
+
+button{
+    padding: 1em;
+    margin: 1.5em;
+    border: 1px solid darkred;
+    border-radius: 5px;
 }
