@@ -3,9 +3,17 @@
     text-align: center;
 }
 
+#conteiner{
+    width: 90%;
+    background-color: antiquewhite;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    margin-top: 2em;
+}
+
 h1 {
     margin-bottom: 2em;
-    margin-top: 1.5em;
+    margin-top: 0.6em;
     color: darkred;
 }
 
@@ -35,4 +43,8 @@ button{
     margin: 1.5em;
     border: 1px solid darkred;
     border-radius: 5px;
+}
+
+#cartel{
+    padding-bottom: 2em;
 }
