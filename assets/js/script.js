@@ -42,9 +42,27 @@ Button.addEventListener('click', selectionCell);
 
 
 
-function selectionCell() {
-    let randomn = Math.floor(Math.random() * 91);
+function selectionCell(e) {
+    e.preventDefault();
+    const randomn = Math.floor(Math.random() * 90);
     const selCell = getElementById(`${randomn}`)
     selCell.classList.add("selected");
 }
 
+const buttonAddCartel = getElementById("addcartel");
+buttonAddCartel.addEventListener("click", addCartell);
+
+function addCartell(e){
+    e.preventDefault();
+    const cartelDiv = document.getElementById("cartel");
+    for(let i = 0; i < 15; i++){
+        let randomn = Math.floor(Math.random() * 15);
+        const cellDiv = document.createElement("div");
+        cellDiv.classList.add("cellCartel");
+        const cellCartelValue = document.createElement("h3");
+        let cellCartel = `${num[randomn]}`;
+        cellCartelValue.innerText = `${cellCartel}`;
+        cellDiv.appendChild(cellCartelValue);
+        cartelDiv.appendChild(cellDiv);
+    }
+}
